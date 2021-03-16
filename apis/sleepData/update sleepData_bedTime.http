@@ -1,0 +1,27 @@
+POST /api/v1/update/sleep HTTP/1.1
+Host: {{baseUrl}}
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJodHRwOi8vbXVzZXdlYXJhYmxlcy5jb20iLCJhdWQiOiJodHRwOi8vYXBpLm11c2V3ZWFyYWJsZXMuY29tIiwiZGF0YSI6eyJ1c2VySUQiOiI4YTk0MWFlZC04YWJlLTQ2ZjEtOTljMi05NjIxN2Q4OGJmMDgifSwiaWF0IjoxNjEyMzUyMzg2LCJleHAiOjE2Mjc5MDQzODYsInRpbWVab25lIjoiQXNpYS9Lb2xrYXRhIn0.sgy-zCfpJQm5CLyHD6t4WYuwhLpJ6mWErHdyioint3Q
+Content-Type: application/json
+Content-Length: 91
+
+{
+    "updateObject": {
+        "bedTime": "2021-01-16T01:00:19+05:30",
+        "dataCollectionStep": 2
+    }
+}
+
+
+<!--
+response:
+
+{
+    "status": "success",
+    "data": {
+        "bedTime": "2021-01-16T01:00:19+05:30",
+        "dataCollectionStep": 2
+    },
+    "message": "operation completed successfully",
+    "displayMessage": "Successful"
+}
+-->
